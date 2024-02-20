@@ -1,0 +1,533 @@
+@import url(https://fonts.google.com/specimen/Josefin+Sans);
+@media screen and (max-width: 767px){
+/* base style for mobile*/
+body{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  background-image: url(images/bg-mobile-light.jpg);
+  background-repeat: repeat-x;
+  background-color: gainsboro ;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -120px;
+}
+.text{
+font-family:'Josefin+Sans',sans-serif;
+font-size: 25px;
+color: white;
+font-weight: 700;
+letter-spacing: 7px;
+}
+.icon-moon{
+width: 20px;
+height: 20px;
+background-image: url(images/icon-moon.svg);
+background-size: cover;
+background-position: center;
+border: none;
+}
+.icon-moon-button{
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  margin-left: 100px;
+  cursor: pointer;
+}
+.first-child-div{
+  margin-top: 14%;
+  margin-left: -20px;
+}
+.inputField{
+  padding:20px 80px 20px 80px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 15px;
+}
+.radio-button{
+  position: absolute;
+  left: 75%;
+  top: 125px;
+  color: hsl(235, 16%, 30%)e;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+input[type=radio]{
+  width: 100%;
+  height: 2em;
+  border: 1px solid white;
+}
+ul{
+   background-color: hsl(0, 0%, 98%);
+   height: 430px;
+   border-radius: 5px;
+   border: none;
+   
+}
+ul li{
+  list-style: none;
+  margin-top: 10px;
+  padding-top: 35px;
+  position: relative;
+  font-size: 20px;
+}
+ul li::after{
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: -25px;
+  width: 110%;
+  height: 1px;
+  background-color: hsl(236, 33%, 92%);
+}
+ul li::before{
+content: " ";
+position: absolute;
+height: 23px;
+width: 23px;
+border-radius: 50%;
+background-image: url(images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.png);
+background-size: cover;
+background-position: center;
+top: 30px;
+left: -30px;
+}
+ul li.checked{
+  text-decoration: line-through;
+}
+ul li.checked::before{
+  background-image: url(images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.png);
+}
+ul li span{
+  position: absolute;
+  right:10PX;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  color: black;
+  line-height: 40px;
+  text-align: center;
+
+ }
+ ul li span:hover{
+  background: #eddeed;
+  border-radius: 10px;
+  
+ }
+.second-child-div{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 35px;
+  color: hsl(236, 9%, 61%);
+  margin-top: -60px;
+}
+.span{
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  margin-left: -20px;
+  justify-content: space-evenly;
+  color: hsl(236, 9%, 61%);
+  font-size: larger;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color:hsl(0, 0%, 98%) ;
+}
+span{
+  color: blue;
+}
+.dark-mode1{
+  
+    display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  background-image: url(images/bg-mobile-dark.jpg);
+  background-repeat: repeat-x;
+  background-color: hsl(237, 14%, 26%) ;
+  
+  .icon-moon{
+    width: 20px;
+    height: 20px;
+    background-image: url(images/icon-sun.svg);
+    background-size: cover;
+    background-position: center;
+    }
+    .first-child-div{
+      margin-top: 14%;
+      margin-left: -20px;
+    }
+    .inputField{
+      padding:20px 80px 20px 80px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      background-color: hsl(235, 24%, 19%);
+      color: white;
+      font-size: 15px;
+    }
+    .radio-button{
+      position: absolute;
+      left: 75%;
+      top: 125px;
+      color: hsl(235, 16%, 30%)e;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    input[type=radio]{
+      width: 100%;
+      height: 2em;
+      border: 1px solid white;
+    }
+    ul{
+       background-color: hsl(235, 24%, 19%);
+       height: 430px;
+       border-radius: 5px;
+       border: none;
+       
+    }
+    ul li span{
+      position: absolute;
+      right:10PX;
+      top: 5px;
+      width: 40px;
+      height: 40px;
+      color: white;
+      line-height: 40px;
+      text-align: center;
+  
+     }
+     ul li span:hover{
+      background: #eddeed;
+      border-radius: 10px;
+      
+     }
+    ul li{
+      list-style: none;
+      margin-top: 10px;
+      padding-top: 35px;
+      position: relative;
+    }
+   
+    ul li::before{
+    content: " ";
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-image: url(images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.png);
+    background-size: cover;
+    background-position: center;
+    top: 30px;
+    left: -30px;
+    }
+    ul li.checked{
+      text-decoration: line-through;
+    }
+    ul li.checked::before{
+      background-image: url(images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.png);
+    }
+    .second-child-div{
+      display: flex;
+      justify-content: space-evenly;
+      gap: 35px;
+      color: hsl(236, 9%, 61%);
+      margin-top: -60px;
+    }
+    .span{
+      display: flex;
+      flex-direction: row;
+      margin-top: 0px;
+      margin-left: -20px;
+      justify-content: space-evenly;
+      color: hsl(236, 9%, 61%);
+      font-size: larger;
+      font-weight: 500;
+      border-radius: 10px;
+      background-color:hsl(235, 24%, 19%) ;
+    }
+    span{
+      color: blue;
+    }
+}
+}
+
+/* Media query for desktops */
+@media screen and (min-width: 1024px){
+  
+  body{
+    background-image: url(images/bg-desktop-light.jpg);
+    width: 100%;
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+  }
+  .parent-div{
+    width: 50%;
+  }
+  .first-child-div{
+    margin-top: 14%;
+    margin-left: -20px;
+    
+  }
+  .inputField{
+    padding:20px 100px 20px 100px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 75%;
+  }
+  .radio-button{
+    position: absolute;
+    left: 69%;
+    top: 220px;
+    color: hsl(235, 16%, 30%)e;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  input[type=radio]{
+    width: 100%;
+    height: 2em;
+    border: 1px solid white;
+  }
+  .header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+  .icon-moon{
+    width: 20px;
+    height: 20px;
+    background-image: url(images/icon-moon.svg);
+    background-size: contain;
+    background-position: center;
+    border: none;
+    }
+    .icon-moon-button{
+      height: 20px;
+      background-color: transparent;
+      border: none;
+      margin-left: 100px;
+      cursor: pointer;
+    }
+    .text{
+      font-family:'Josefin+Sans',sans-serif;
+      font-size: 35px;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 7px;
+
+      }
+      ul{
+        background-color: hsl(0, 0%, 98%);
+        height: 430px;
+        border-radius: 5px;
+        border: none;
+        
+     }
+     ul li span{
+      position: absolute;
+      right:0;
+      top: 5px;
+      width: 40px;
+      height: 40px;
+      color: black;
+      line-height: 40px;
+      text-align: center;
+      font-size: 30px;
+     }
+     ul li span:hover{
+      background: #eddeed;
+      border-radius: 10px;
+      
+     }
+     ul li{
+       list-style: none;
+       margin-top: 10px;
+       padding-top: 35px;
+       position: relative;
+     }
+     ul li::after{
+       content: " ";
+       position: absolute;
+       bottom: 0;
+       left: -25px;
+       width: 100%;
+       height: 1px;
+       background-color: hsl(236, 33%, 92%);
+     }
+     ul li::before{
+     content: " ";
+     position: absolute;
+     height: 23px;
+     width: 23px;
+     border-radius: 50%;
+     background-image: url(images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.png);
+     background-size: cover;
+     background-position: center;
+     top: 30px;
+     left: -30px;
+     }
+     ul li.checked{
+       text-decoration: line-through;
+     }
+     ul li.checked::before{
+       background-image: url(images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.png);
+     }
+     .second-child-div{
+       display: flex;
+       justify-content: space-evenly;
+       gap: 35px;
+       color: hsl(236, 9%, 61%);
+       margin-top: -60px;
+     }
+     .span{
+       display: flex;
+       flex-direction: row;
+       margin-top: 0px;
+       margin-left: -20px;
+       justify-content: space-evenly;
+       color: hsl(236, 9%, 61%);
+       font-size: larger;
+       font-weight: 500;
+       border-radius: 10px;
+       background-color:hsl(0, 0%, 98%) ;
+     }
+     span{
+       color: blue;
+     }
+      
+  .dark-mode1{
+          display: flex;
+        justify-content: center;
+        margin-top: 10rem;
+        background-image: url(images/bg-desktop-dark.jpg);
+        width: 100%;
+     background-repeat: repeat-x; 
+    /* background-size: contain; */
+    /* background-size: cover; */
+        background-color: hsl(237, 14%, 26%) ;
+        
+        .icon-moon{
+          width: 20px;
+          height: 20px;
+          background-image: url(images/icon-sun.svg);
+          background-size: cover;
+          background-position: center;
+          }
+          .header{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: -130px;
+          }
+          .first-child-div{
+            margin-top: 14%;
+            margin-left: -20px;
+          }
+          .inputField{
+            padding:20px 100px 20px 100px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            background-color: hsl(235, 24%, 19%);
+            color: white;
+            font-size: 20px;
+          }
+          .radio-button{
+            position: absolute;
+            left: 69%;
+            top: 210px;
+            color: hsl(235, 16%, 30%)e;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+          }
+          input[type=radio]{
+            width: 100%;
+            height: 2em;
+            border: 1px solid white;
+          }
+          ul{
+             background-color: hsl(235, 24%, 19%);
+             height: 430px;
+             border-radius: 5px;
+             border: none;
+             
+          }
+          ul li{
+            list-style: none;
+            margin-top: 10px;
+            padding-top: 35px;
+            position: relative;
+          }
+          ul li span{
+            position: absolute;
+            right:0;
+            top: 5px;
+            width: 40px;
+            height: 40px;
+            color: white;
+            line-height: 40px;
+            text-align: center;
+            font-size: 30px;
+           }
+           ul li span:hover{
+            background: #eddeed;
+            border-radius: 10px;
+            
+           }
+          ul li::before{
+          content: " ";
+          position: absolute;
+          height: 23px;
+          width: 23px;
+          border-radius: 50%;
+          background-image: url(images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.png);
+          background-size: cover;
+          background-position: center;
+          top: 30px;
+          left: -30px;
+          }
+          ul li.checked{
+            text-decoration: line-through;
+          }
+          ul li.checked::before{
+            background-image: url(images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.png);
+          }
+          .second-child-div{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 35px;
+            color: hsl(236, 9%, 61%);
+            margin-top: -60px;
+          }
+          .span{
+            display: flex;
+            flex-direction: row;
+            margin-top: 0px;
+            margin-left: -20px;
+            justify-content: space-evenly;
+            color: hsl(236, 9%, 61%);
+            font-size: larger;
+            font-weight: 500;
+            border-radius: 10px;
+            background-color:hsl(235, 24%, 19%) ;
+          }
+          span{
+            color: blue;
+          }
+      }
+}
