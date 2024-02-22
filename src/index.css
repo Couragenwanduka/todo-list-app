@@ -142,8 +142,10 @@ ul li span{
 span{
   color: blue;
 }
+
+/* THIS IS FOR THE DARKMODE */
 .dark-mode1{
-  
+  /* DARKMODE BODY */
     display: flex;
   justify-content: center;
   margin-top: 10rem;
@@ -407,7 +409,7 @@ span{
      span{
        color: blue;
      }
-      
+      /* FOR DARKMODE */
   .dark-mode1{
           display: flex;
         justify-content: center;
@@ -472,6 +474,7 @@ span{
             margin-top: 10px;
             padding-top: 35px;
             position: relative;
+            color: white;
           }
           ul li span{
             position: absolute;
