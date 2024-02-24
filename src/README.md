@@ -24,8 +24,7 @@ This ToDo list app allows users to manage their tasks with ease. It features CRU
 
 ## Usage
 
-1. **Adding a Task**: To add a new task, click on the "Add Task" button and fill out the task details in the input field. Press Enter or click the "Add" button to save the task.
-2. **Updating a Task**: To update a task, click on the task text to enable editing. Modify the task details and press Enter to save the changes.
+1. **Adding a Task**: To add a new task, click on the "Add Task" button and fill out the task details in the input field.  click the "Add" button to save the task.
+2. **Updating a Task**: To update a task, click on the task text to enable editing. Modify the task details.
 3. **Deleting a Task**: To delete a task, click on the delete icon next to the task.
 4. **Toggling Dark/Light Mode**: To switch between dark and light modes, click on the moon/sun icon located in the app's header.
-
