@@ -2,17 +2,17 @@
 @media screen and (max-width: 767px){
 /* base style for mobile*/
 body{
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-  background-image: url(images/bg-mobile-light.jpg);
-  background-repeat: repeat-x;
-  background-color: gainsboro ;
+display: flex;
+justify-content: center;
+margin-top: 10rem;
+background-image: url(images/bg-mobile-light.jpg);
+background-repeat: repeat-x;
+background-color: gainsboro ;
 }
 .header{
-  display: flex;
-  justify-content: space-between;
-  margin-top: -120px;
+display: flex;
+justify-content: space-between;
+margin-top: -120px;
 }
 .text{
 font-family:'Josefin+Sans',sans-serif;
@@ -30,33 +30,572 @@ background-position: center;
 border: none;
 }
 .icon-moon-button{
-  height: 20px;
-  background-color: transparent;
-  border: none;
-  margin-left: 100px;
-  cursor: pointer;
+height: 20px;
+background-color: transparent;
+border: none;
+margin-left: 100px;
+cursor: pointer;
+}
+.first-child-div{
+margin-top: 14%;
+margin-left: -20px;
+}
+.inputField{
+padding:20px 80px 20px 80px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+position: relative;
+font-size: 15px;
+}
+.radio-button{
+position: absolute;
+left: 74%;
+top: 115px;
+color: white;
+background: blur(20px);
+background-image: linear-gradient( 98deg, rgb(169, 119, 169) ,rgb(91, 91, 192));
+border-style: groove;
+border-radius: 10px;
+padding: 10px 15px 20px 7px;
+cursor: pointer;
+font-size: 20px;
+text-align: center;
+}
+input[type=radio]{
+width: 100%;
+height: 2em;
+border: 1px solid white;
+}
+ul{
+background-color: hsl(0, 0%, 98%);
+height: 430px;
+border-radius: 5px;
+border: none;
+
+}
+ul li{
+list-style: none;
+margin-top: 10px;
+padding-top: 35px;
+position: relative;
+font-size: 20px;
+}
+ul li::after{
+content: " ";
+position: absolute;
+bottom: 0;
+left: -25px;
+width: 110%;
+height: 1px;
+background-color: hsl(236, 33%, 92%);
+}
+ul li::before{
+content: " ";
+position: absolute;
+height: 23px;
+width: 23px;
+border-radius: 50%;
+background-image: url(images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.png);
+background-size: cover;
+background-position: center;
+top: 30px;
+left: -30px;
+}
+ul li.checked{
+text-decoration: line-through;
+}
+ul li.checked::before{
+background-image: url(images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.png);
+}
+ul li span{
+position: absolute;
+right:15px;
+top: 5px;
+width: 40px;
+height: 40px;
+color: #0D1F23;
+line-height: 40px;
+text-align: center;
+font-size: 30px;
+box-shadow:5px 5px  #0D1F23;
+background-color: #AFB3B7;
+border-radius: 10px;
+}
+ul li span:hover{
+background: #0D1F23;
+color: white;
+border-radius: 10px;
+box-shadow: 5px 5px #AFB3B7;
+
+}
+.second-child-div{
+display: flex;
+justify-content: space-evenly;
+gap: 35px;
+color: hsl(236, 9%, 61%);
+margin-top: -60px;
+}
+.span{
+display: flex;
+flex-direction: row;
+margin-top: 0px;
+margin-left: -20px;
+justify-content: space-evenly;
+color: hsl(236, 9%, 61%);
+font-size: larger;
+font-weight: 500;
+border-radius: 10px;
+background-color:hsl(0, 0%, 98%) ;
+}
+span{
+color: blue;
+}
+.edit-button {
+position: absolute;
+right:95px;
+top: 5px;
+width: 40px;
+height: 40px;
+color: white;
+line-height: 40px;
+text-align: center;
+font-size: 15px;
+border-radius: 10px;
+background-color: #B51A2B;
+box-shadow: 5px 5px #541A2E;
+}
+.edit-button:hover{
+background-color: #541A2E;
+box-shadow: 5px 5px #B51A2B;
+}
+.clear-button{
+  position: absolute;
+  top: 14.5%;
+  right: 25%;
+  width: 40px;
+height: 40px;
+color: white;
+line-height: 40px;
+text-align: center;
+font-size: 15px;
+border-radius: 10px;
+background-color: #B51A2B;
+box-shadow: 5px 5px #541A2E;
+  transform: translateX(-50%);
+}
+#list-container{
+  max-height: 300px;
+}
+
+/* THIS IS FOR THE DARKMODE */
+.dark-mode1{
+/* DARKMODE BODY */
+display: flex;
+justify-content: center;
+margin-top: 10rem;
+background-image: url(images/bg-mobile-dark.jpg);
+background-repeat: repeat-x;
+background-color: hsl(237, 14%, 26%) ;
+
+.icon-moon{
+width: 20px;
+height: 20px;
+background-image: url(images/icon-sun.svg);
+background-size: cover;
+background-position: center;
+}
+.first-child-div{
+margin-top: 14%;
+margin-left: -20px;
+}
+.inputField{
+padding:20px 80px 20px 80px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+position: relative;
+background-color: hsl(235, 24%, 19%);
+color: white;
+font-size: 15px;
+}
+.radio-button{
+position: absolute;
+left: 71.5%;
+top: 113px;
+color: white;
+background: blur(20px);
+background-image: linear-gradient( 98deg, rgb(142, 79, 142) ,rgb(55, 55, 148));
+border-style: groove;
+border-radius: 10px;
+padding: 10px 15px 20px 7px;
+cursor: pointer;
+font-size: 20px;
+text-align: center;
+box-shadow: 1px 1px black;
+}
+input[type=radio]{
+width: 100%;
+height: 2em;
+border: 1px solid white;
+}
+ul{
+background-color: hsl(235, 24%, 19%);
+height: 430px;
+border-radius: 5px;
+border: none;
+
+}
+ul li span{
+position: absolute;
+right:15px;
+top: 5px;
+width: 40px;
+height: 40px;
+color: #0D1F23;
+line-height: 40px;
+text-align: center;
+font-size: 30px;
+box-shadow:5px 5px  #2b4b53;
+background-color: #5a6b7b;
+border-radius: 10px;
+}
+ul li span:hover{
+background: #2b4b53;
+color: white;
+border-radius: 10px;
+box-shadow: 5px 5px #5a6b7b;
+
+}
+ul li{
+list-style: none;
+margin-top: 10px;
+padding-top: 35px;
+position: relative;
+}
+
+ul li::before{
+content: " ";
+position: absolute;
+height: 23px;
+width: 23px;
+border-radius: 50%;
+background-image: url(images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.png);
+background-size: cover;
+background-position: center;
+top: 30px;
+left: -30px;
+}
+ul li.checked{
+text-decoration: line-through;
+}
+ul li.checked::before{
+background-image: url(images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.png);
+}
+.second-child-div{
+display: flex;
+justify-content: space-evenly;
+gap: 35px;
+color: hsl(236, 9%, 61%);
+margin-top: -60px;
+}
+.span{
+display: flex;
+flex-direction: row;
+margin-top: 0px;
+margin-left: -20px;
+justify-content: space-evenly;
+color: hsl(236, 9%, 61%);
+font-size: larger;
+font-weight: 500;
+border-radius: 10px;
+background-color:hsl(235, 24%, 19%) ;
+}
+.edit-button {
+position: absolute;
+right:95px;
+top: 5px;
+width: 40px;
+height: 40px;
+color: white;
+line-height: 40px;
+text-align: center;
+font-size: 15px;
+border-radius: 10px;
+background-color: #AFB3B7;
+box-shadow: 5px 5px #5A636A;
+}
+.edit-button:hover{
+background-color: #5A636A;
+box-shadow: 5px 5px #AFB3B7;
+}
+.clear-button{
+  position: absolute;
+  top: 14.5%;
+  right: 25%;
+  width: 40px;
+height: 40px;
+color: white;
+line-height: 40px;
+text-align: center;
+font-size: 15px;
+border-radius: 10px;
+background-color: #B51A2B;
+box-shadow: 5px 5px #541A2E;
+  transform: translateX(-50%);
+}
+#list-container{
+  max-height: 300px;
+}
+span{
+color: blue;
+}
+}
+}
+
+/* Media query for desktops */
+@media screen and (min-width: 1024px){
+
+body{
+background-image: url(images/bg-desktop-light.jpg);
+width: 100%;
+background-repeat: repeat-x;
+display: flex;
+justify-content: center;
+}
+.parent-div{
+width: 50%;
+}
+.first-child-div{
+margin-top: 14%;
+margin-left: -20px;
+
+}
+.inputField{
+padding:20px 100px 20px 100px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+position: relative;
+width: 75%;
+}
+.radio-button{
+position: absolute;
+left: 71.5%;
+top: 195px;
+color: white;
+background-color: #41174e;
+border-radius: 10px;
+padding: 10px 15px 20px 7px;
+cursor: pointer;
+font-size: 20px;
+text-align: center;
+box-shadow: 1px 1px black;
+}
+input[type=radio]{
+width: 100%;
+height: 2em;
+border: 1px solid white;
+}
+.header{
+display: flex;
+justify-content: space-evenly;
+margin-top: 40px;
+}
+.icon-moon{
+width: 20px;
+height: 20px;
+background-image: url(images/icon-moon.svg);
+background-size: contain;
+background-position: center;
+border: none;
+}
+.icon-moon-button{
+height: 20px;
+background-color: transparent;
+border: none;
+margin-left: 100px;
+cursor: pointer;
+}
+.text{
+font-family:'Josefin+Sans',sans-serif;
+font-size: 35px;
+color: white;
+font-weight: 700;
+letter-spacing: 7px;
+
+}
+ul{
+background-color: hsl(0, 0%, 98%);
+height: 430px;
+border-radius: 5px;
+border: none;
+
+}
+ul li span{
+position: absolute;
+right:15px;
+top: 5px;
+width: 40px;
+height: 40px;
+color: #0D1F23;
+line-height: 40px;
+text-align: center;
+font-size: 30px;
+box-shadow:5px 5px  #0D1F23;
+background-color: #AFB3B7;
+border-radius: 10px;
+}
+ul li span:hover{
+background: #0D1F23;
+color: white;
+border-radius: 10px;
+box-shadow: 5px 5px #AFB3B7;
+
+}
+ul li{
+list-style: none;
+margin-top: 10px;
+padding-top: 35px;
+position: relative;
+}
+ul li::after{
+content: " ";
+position: absolute;
+bottom: 0;
+left: -25px;
+width: 100%;
+height: 1px;
+background-color: hsl(236, 33%, 92%);
+}
+ul li::before{
+content: " ";
+position: absolute;
+height: 23px;
+width: 23px;
+border-radius: 50%;
+background-image: url(images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.png);
+background-size: cover;
+background-position: center;
+top: 30px;
+left: -30px;
+}
+ul li.checked{
+text-decoration: line-through;
+}
+ul li.checked::before{
+background-image: url(images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.png);
+}
+.second-child-div{
+display: flex;
+justify-content: space-evenly;
+gap: 35px;
+color: hsl(236, 9%, 61%);
+margin-top: -60px;
+}
+.span{
+display: flex;
+flex-direction: row;
+margin-top: 0px;
+margin-left: -20px;
+justify-content: space-evenly;
+color: hsl(236, 9%, 61%);
+font-size: larger;
+font-weight: 500;
+border-radius: 10px;
+background-color:hsl(0, 0%, 98%) ;
+}
+span{
+color: blue;
+}
+.edit-button {
+position: absolute;
+right:95px;
+top: 5px;
+width: 40px;
+height: 40px;
+color: white;
+line-height: 40px;
+text-align: center;
+font-size: 15px;
+border-radius: 10px;
+background-color: #B51A2B;
+box-shadow: 5px 5px #541A2E;
+}
+.edit-button:hover{
+background-color: #541A2E;
+box-shadow: 5px 5px #B51A2B;
+}
+.clear-button{
+  position: absolute;
+  top: 29.5%;
+  right: 30%;
+  width: 40px;
+height: 40px;
+color: white;
+line-height: 40px;
+text-align: center;
+font-size: 15px;
+border-radius: 10px;
+background-color: #B51A2B;
+box-shadow: 5px 5px #541A2E;
+  transform: translateX(-50%);
+}
+#list-container{
+  max-height: 300px;
+}
+/* FOR DARKMODE */
+.dark-mode1{
+display: flex;
+justify-content: center;
+margin-top: 10rem;
+background-image: url(images/bg-desktop-dark.jpg);
+width: 100%;
+background-repeat: repeat-x; 
+/* background-size: contain; */
+/* background-size: cover; */
+background-color: hsl(237, 14%, 26%) ;
+
+.icon-moon{
+width: 20px;
+height: 20px;
+background-image: url(images/icon-sun.svg);
+background-size: cover;
+background-position: center;
+}
+.header{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -130px;
 }
 .first-child-div{
   margin-top: 14%;
   margin-left: -20px;
 }
 .inputField{
-  padding:20px 80px 20px 80px;
+  padding:20px 100px 20px 100px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   position: relative;
-  font-size: 15px;
+  background-color: hsl(235, 24%, 19%);
+  color: white;
+  font-size: 20px;
 }
 .radio-button{
   position: absolute;
-  left: 75%;
-  top: 125px;
-  color: hsl(235, 16%, 30%)e;
-  background-color: transparent;
-  border: none;
+  left: 71.5%;
+  top: 179px;
+  color: white;
+  background: blur(20px);
+  background-image: linear-gradient( 30deg, rgb(158, 74, 158) ,rgb(57, 57, 164));
+  border-style: groove;
+  border-radius: 10px;
+  padding: 10px 15px 20px 7px;
   cursor: pointer;
   font-size: 20px;
+  text-align: center;
+  box-shadow: 1px 1px black;
 }
 input[type=radio]{
   width: 100%;
@@ -64,27 +603,39 @@ input[type=radio]{
   border: 1px solid white;
 }
 ul{
-   background-color: hsl(0, 0%, 98%);
-   height: 430px;
-   border-radius: 5px;
-   border: none;
-   
+  background-color: hsl(235, 24%, 19%);
+  height: 430px;
+  border-radius: 5px;
+  border: none;
+  
 }
 ul li{
   list-style: none;
   margin-top: 10px;
   padding-top: 35px;
   position: relative;
-  font-size: 20px;
+  color: white;
 }
-ul li::after{
-  content: " ";
+ul li span{
   position: absolute;
-  bottom: 0;
-  left: -25px;
-  width: 110%;
-  height: 1px;
-  background-color: hsl(236, 33%, 92%);
+  right:15px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  color: #0D1F23;
+  line-height: 40px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow:5px 5px  #2b4b53;
+  background-color: #5a6b7b;
+  border-radius: 10px;
+}
+ul li span:hover{
+  background: #2b4b53;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px #5a6b7b;
+  
 }
 ul li::before{
 content: " ";
@@ -104,433 +655,45 @@ ul li.checked{
 ul li.checked::before{
   background-image: url(images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.png);
 }
-ul li span{
+
+.edit-button {
   position: absolute;
-  right:10PX;
+  right:95px;
   top: 5px;
   width: 40px;
   height: 40px;
-  color: black;
+  color: white;
   line-height: 40px;
   text-align: center;
-
- }
- ul li span:hover{
-  background: #eddeed;
+  font-size: 15px;
   border-radius: 10px;
-  
- }
-.second-child-div{
-  display: flex;
-  justify-content: space-evenly;
-  gap: 35px;
-  color: hsl(236, 9%, 61%);
-  margin-top: -60px;
+  background-color: #AFB3B7;
+  box-shadow: 5px 5px #5A636A;
 }
-.span{
-  display: flex;
-  flex-direction: row;
-  margin-top: 0px;
-  margin-left: -20px;
-  justify-content: space-evenly;
-  color: hsl(236, 9%, 61%);
-  font-size: larger;
-  font-weight: 500;
-  border-radius: 10px;
-  background-color:hsl(0, 0%, 98%) ;
+.edit-button:hover{
+  background-color: #5A636A;
+  box-shadow: 5px 5px #AFB3B7;
+}
+.clear-button{
+  position: absolute;
+  top: 27%;
+  right: 30%;
+  width: 40px;
+height: 40px;
+color: white;
+line-height: 40px;
+text-align: center;
+font-size: 15px;
+border-radius: 10px;
+background-color: #B51A2B;
+box-shadow: 5px 5px #541A2E;
+  transform: translateX(-50%);
+}
+#list-container{
+  max-height: 300px;
 }
 span{
   color: blue;
 }
-
-/* THIS IS FOR THE DARKMODE */
-.dark-mode1{
-  /* DARKMODE BODY */
-    display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-  background-image: url(images/bg-mobile-dark.jpg);
-  background-repeat: repeat-x;
-  background-color: hsl(237, 14%, 26%) ;
-  
-  .icon-moon{
-    width: 20px;
-    height: 20px;
-    background-image: url(images/icon-sun.svg);
-    background-size: cover;
-    background-position: center;
-    }
-    .first-child-div{
-      margin-top: 14%;
-      margin-left: -20px;
-    }
-    .inputField{
-      padding:20px 80px 20px 80px;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-      position: relative;
-      background-color: hsl(235, 24%, 19%);
-      color: white;
-      font-size: 15px;
-    }
-    .radio-button{
-      position: absolute;
-      left: 75%;
-      top: 125px;
-      color: hsl(235, 16%, 30%)e;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      font-size: 20px;
-    }
-    input[type=radio]{
-      width: 100%;
-      height: 2em;
-      border: 1px solid white;
-    }
-    ul{
-       background-color: hsl(235, 24%, 19%);
-       height: 430px;
-       border-radius: 5px;
-       border: none;
-       
-    }
-    ul li span{
-      position: absolute;
-      right:10PX;
-      top: 5px;
-      width: 40px;
-      height: 40px;
-      color: white;
-      line-height: 40px;
-      text-align: center;
-  
-     }
-     ul li span:hover{
-      background: #eddeed;
-      border-radius: 10px;
-      
-     }
-    ul li{
-      list-style: none;
-      margin-top: 10px;
-      padding-top: 35px;
-      position: relative;
-    }
-   
-    ul li::before{
-    content: " ";
-    position: absolute;
-    height: 23px;
-    width: 23px;
-    border-radius: 50%;
-    background-image: url(images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.png);
-    background-size: cover;
-    background-position: center;
-    top: 30px;
-    left: -30px;
-    }
-    ul li.checked{
-      text-decoration: line-through;
-    }
-    ul li.checked::before{
-      background-image: url(images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.png);
-    }
-    .second-child-div{
-      display: flex;
-      justify-content: space-evenly;
-      gap: 35px;
-      color: hsl(236, 9%, 61%);
-      margin-top: -60px;
-    }
-    .span{
-      display: flex;
-      flex-direction: row;
-      margin-top: 0px;
-      margin-left: -20px;
-      justify-content: space-evenly;
-      color: hsl(236, 9%, 61%);
-      font-size: larger;
-      font-weight: 500;
-      border-radius: 10px;
-      background-color:hsl(235, 24%, 19%) ;
-    }
-    span{
-      color: blue;
-    }
 }
-}
-
-/* Media query for desktops */
-@media screen and (min-width: 1024px){
-  
-  body{
-    background-image: url(images/bg-desktop-light.jpg);
-    width: 100%;
-    background-repeat: repeat-x;
-    display: flex;
-    justify-content: center;
-  }
-  .parent-div{
-    width: 50%;
-  }
-  .first-child-div{
-    margin-top: 14%;
-    margin-left: -20px;
-    
-  }
-  .inputField{
-    padding:20px 100px 20px 100px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    width: 75%;
-  }
-  .radio-button{
-    position: absolute;
-    left: 69%;
-    top: 220px;
-    color: hsl(235, 16%, 30%)e;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  input[type=radio]{
-    width: 100%;
-    height: 2em;
-    border: 1px solid white;
-  }
-  .header{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 40px;
-  }
-  .icon-moon{
-    width: 20px;
-    height: 20px;
-    background-image: url(images/icon-moon.svg);
-    background-size: contain;
-    background-position: center;
-    border: none;
-    }
-    .icon-moon-button{
-      height: 20px;
-      background-color: transparent;
-      border: none;
-      margin-left: 100px;
-      cursor: pointer;
-    }
-    .text{
-      font-family:'Josefin+Sans',sans-serif;
-      font-size: 35px;
-      color: white;
-      font-weight: 700;
-      letter-spacing: 7px;
-
-      }
-      ul{
-        background-color: hsl(0, 0%, 98%);
-        height: 430px;
-        border-radius: 5px;
-        border: none;
-        
-     }
-     ul li span{
-      position: absolute;
-      right:0;
-      top: 5px;
-      width: 40px;
-      height: 40px;
-      color: black;
-      line-height: 40px;
-      text-align: center;
-      font-size: 30px;
-     }
-     ul li span:hover{
-      background: #eddeed;
-      border-radius: 10px;
-      
-     }
-     ul li{
-       list-style: none;
-       margin-top: 10px;
-       padding-top: 35px;
-       position: relative;
-     }
-     ul li::after{
-       content: " ";
-       position: absolute;
-       bottom: 0;
-       left: -25px;
-       width: 100%;
-       height: 1px;
-       background-color: hsl(236, 33%, 92%);
-     }
-     ul li::before{
-     content: " ";
-     position: absolute;
-     height: 23px;
-     width: 23px;
-     border-radius: 50%;
-     background-image: url(images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.png);
-     background-size: cover;
-     background-position: center;
-     top: 30px;
-     left: -30px;
-     }
-     ul li.checked{
-       text-decoration: line-through;
-     }
-     ul li.checked::before{
-       background-image: url(images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.png);
-     }
-     .second-child-div{
-       display: flex;
-       justify-content: space-evenly;
-       gap: 35px;
-       color: hsl(236, 9%, 61%);
-       margin-top: -60px;
-     }
-     .span{
-       display: flex;
-       flex-direction: row;
-       margin-top: 0px;
-       margin-left: -20px;
-       justify-content: space-evenly;
-       color: hsl(236, 9%, 61%);
-       font-size: larger;
-       font-weight: 500;
-       border-radius: 10px;
-       background-color:hsl(0, 0%, 98%) ;
-     }
-     span{
-       color: blue;
-     }
-      /* FOR DARKMODE */
-  .dark-mode1{
-          display: flex;
-        justify-content: center;
-        margin-top: 10rem;
-        background-image: url(images/bg-desktop-dark.jpg);
-        width: 100%;
-     background-repeat: repeat-x; 
-    /* background-size: contain; */
-    /* background-size: cover; */
-        background-color: hsl(237, 14%, 26%) ;
-        
-        .icon-moon{
-          width: 20px;
-          height: 20px;
-          background-image: url(images/icon-sun.svg);
-          background-size: cover;
-          background-position: center;
-          }
-          .header{
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: -130px;
-          }
-          .first-child-div{
-            margin-top: 14%;
-            margin-left: -20px;
-          }
-          .inputField{
-            padding:20px 100px 20px 100px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            position: relative;
-            background-color: hsl(235, 24%, 19%);
-            color: white;
-            font-size: 20px;
-          }
-          .radio-button{
-            position: absolute;
-            left: 69%;
-            top: 210px;
-            color: hsl(235, 16%, 30%)e;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            font-size: 20px;
-          }
-          input[type=radio]{
-            width: 100%;
-            height: 2em;
-            border: 1px solid white;
-          }
-          ul{
-             background-color: hsl(235, 24%, 19%);
-             height: 430px;
-             border-radius: 5px;
-             border: none;
-             
-          }
-          ul li{
-            list-style: none;
-            margin-top: 10px;
-            padding-top: 35px;
-            position: relative;
-            color: white;
-          }
-          ul li span{
-            position: absolute;
-            right:0;
-            top: 5px;
-            width: 40px;
-            height: 40px;
-            color: white;
-            line-height: 40px;
-            text-align: center;
-            font-size: 30px;
-           }
-           ul li span:hover{
-            background: #eddeed;
-            border-radius: 10px;
-            
-           }
-          ul li::before{
-          content: " ";
-          position: absolute;
-          height: 23px;
-          width: 23px;
-          border-radius: 50%;
-          background-image: url(images/radio_button_unchecked_FILL0_wght400_GRAD0_opsz24.png);
-          background-size: cover;
-          background-position: center;
-          top: 30px;
-          left: -30px;
-          }
-          ul li.checked{
-            text-decoration: line-through;
-          }
-          ul li.checked::before{
-            background-image: url(images/radio_button_checked_FILL0_wght400_GRAD0_opsz24.png);
-          }
-          .second-child-div{
-            display: flex;
-            justify-content: space-evenly;
-            gap: 35px;
-            color: hsl(236, 9%, 61%);
-            margin-top: -60px;
-          }
-          .span{
-            display: flex;
-            flex-direction: row;
-            margin-top: 0px;
-            margin-left: -20px;
-            justify-content: space-evenly;
-            color: hsl(236, 9%, 61%);
-            font-size: larger;
-            font-weight: 500;
-            border-radius: 10px;
-            background-color:hsl(235, 24%, 19%) ;
-          }
-          span{
-            color: blue;
-          }
-      }
 }
